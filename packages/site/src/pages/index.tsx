@@ -32,7 +32,7 @@ const Container = styled.div`
   }
 `;
 
-const Heading = styled.h1`
+const Hero = styled.h1`
   margin-top: 0;
   margin-bottom: 2.4rem;
   text-align: center;
@@ -116,11 +116,11 @@ const Index = () => {
 
   return (
     <Container>
-      <Heading>
-        Welcome to <Span>template-snap</Span>
-      </Heading>
+      <Hero>
+        Welcome to <Span>Lendooor</Span>
+      </Hero>
       <Subtitle>
-        Get started by editing <code>src/index.tsx</code>
+        Instant NFT lending powered by <code>MetaMask</code>
       </Subtitle>
       <CardContainer>
         {error && (
@@ -173,7 +173,7 @@ const Index = () => {
         )}
         <Card
           content={{
-            title: 'Send Hello message',
+            title: 'Trigger example event',
             description:
               'Display a custom message within a confirmation screen in MetaMask.',
             button: (
@@ -202,5 +202,14 @@ const Index = () => {
     </Container>
   );
 };
+
+export function Head() {
+  return (
+    <>
+      <title>Snap for Lendooor</title>
+      <link rel="shortcut icon" href="/logo-lendooor.svg" />
+    </>
+  );
+}
 
 export default Index;

@@ -17,14 +17,10 @@ describe('onRpcRequest', () => {
       expect(ui.type).toBe('confirmation');
       expect(ui).toRender(
         <Box>
-          <Text>
-            Hello, <Bold>{origin}</Bold>!
-          </Text>
-          <Text>This custom confirmation is just for display purposes.</Text>
-          <Text>
-            But you can edit the snap source code to make it do something, if
-            you want to!
-          </Text>
+          <Text>Connected via {origin}!</Text>
+          <Bold>Welcome, Lendooor!</Bold>
+          <Text>Are you ready to put your NFTs to work?</Text>
+          <Text>This integration is ready to be customized!</Text>
         </Box>,
       );
 
