@@ -24,14 +24,16 @@ export const onRpcRequest: OnRpcRequestHandler = async ({
           content: (
             <Box>
               <Text>
-                Hello, <Bold>{origin}</Bold>!
+                Connected via {origin}!
+              </Text>
+              <Bold>
+                Welcome, Lendooor!
+              </Bold>
+              <Text>
+                Are you ready to put your NFTs to work?
               </Text>
               <Text>
-                This custom confirmation is just for display purposes.
-              </Text>
-              <Text>
-                But you can edit the snap source code to make it do something,
-                if you want to!
+                This integration is ready to be customized!
               </Text>
             </Box>
           ),

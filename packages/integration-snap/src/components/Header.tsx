@@ -1,4 +1,5 @@
 import styled, { useTheme } from 'styled-components';
+import { Link } from 'gatsby';
 
 import { getThemePreference } from '../utils';
 import { HeaderButtons } from './Buttons';
@@ -36,6 +37,11 @@ const RightContainer = styled.div`
   align-items: center;
 `;
 
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+`;
+
 export const Header = ({
   handleToggleClick,
 }: {
@@ -45,10 +51,12 @@ export const Header = ({
 
   return (
     <HeaderWrapper>
-      <LogoWrapper>
-        <SnapLogo color={theme.colors.icon?.default} size={36} />
-        <Title>template-snap</Title>
-      </LogoWrapper>
+      <StyledLink to="http://localhost:3000">
+        <LogoWrapper>
+          <SnapLogo color={theme.colors.icon?.default} size={36} />
+          <Title>Lendooor Snap</Title>
+        </LogoWrapper>
+      </StyledLink>
       <RightContainer>
         <Toggle
           onToggle={handleToggleClick}
