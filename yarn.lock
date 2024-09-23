@@ -4030,8 +4030,8 @@ __metadata:
   linkType: hard
 
 "@metamask/snaps-controllers@npm:^9.7.0":
-  version: 9.7.0
-  resolution: "@metamask/snaps-controllers@npm:9.7.0"
+  version: 9.8.0
+  resolution: "@metamask/snaps-controllers@npm:9.8.0"
   dependencies:
     "@metamask/approval-controller": ^7.0.2
     "@metamask/base-controller": ^6.0.2
@@ -4044,7 +4044,7 @@ __metadata:
     "@metamask/rpc-errors": ^6.3.1
     "@metamask/snaps-registry": ^3.2.1
     "@metamask/snaps-rpc-methods": ^11.1.1
-    "@metamask/snaps-sdk": ^6.5.0
+    "@metamask/snaps-sdk": ^6.5.1
     "@metamask/snaps-utils": ^8.1.1
     "@metamask/utils": ^9.2.1
     "@xstate/fsm": ^2.0.0
@@ -4058,11 +4058,11 @@ __metadata:
     readable-web-to-node-stream: ^3.0.2
     tar-stream: ^3.1.7
   peerDependencies:
-    "@metamask/snaps-execution-environments": ^6.7.1
+    "@metamask/snaps-execution-environments": ^6.7.2
   peerDependenciesMeta:
     "@metamask/snaps-execution-environments":
       optional: true
-  checksum: 79f476060b675bfb172f7c84838637785f1da70624b3273f6dcc7eea61c2b560f73c26b945808621cb85c1831c59e382656ce61dad0845c2f867d373f7bbfb95
+  checksum: 1bba9c1a59ee955464e1123dafc86318ae981567d1cfb816b262a576c8f452f4f595132ff15cbede1d34ecc7ea22f5a4e978399c6369c1d5e099ad297666d51f
   languageName: node
   linkType: hard
 
@@ -4147,6 +4147,19 @@ __metadata:
   linkType: hard
 
 "@metamask/snaps-sdk@npm:^6.1.1, @metamask/snaps-sdk@npm:^6.5.0":
+  version: 6.5.1
+  resolution: "@metamask/snaps-sdk@npm:6.5.1"
+  dependencies:
+    "@metamask/key-tree": ^9.1.2
+    "@metamask/providers": ^17.1.2
+    "@metamask/rpc-errors": ^6.3.1
+    "@metamask/superstruct": ^3.1.0
+    "@metamask/utils": ^9.2.1
+  checksum: 4a6b3d8fab615155aaabbe567b7b94485bfe328e38d214fcd1e359deb927fb2c1ade2c849b7e0270ebc60e7db9caf1ea4d634f26c80e0e8f4d4447f4469d8da1
+  languageName: node
+  linkType: hard
+
+"@metamask/snaps-sdk@npm:^6.5.1":
   version: 6.5.1
   resolution: "@metamask/snaps-sdk@npm:6.5.1"
   dependencies:
