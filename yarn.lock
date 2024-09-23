@@ -3458,16 +3458,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/base-controller@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "@metamask/base-controller@npm:7.0.0"
-  dependencies:
-    "@metamask/utils": ^9.1.0
-    immer: ^9.0.6
-  checksum: e71d695fff2011e241862868c5771996204e5348ffb11f1beb229956e3d1f175d01915180c570f426cd5f09cdc7aca3a5d8b32342e89659cfdff1c66fba40fb7
-  languageName: node
-  linkType: hard
-
 "@metamask/base-controller@npm:^7.0.1":
   version: 7.0.1
   resolution: "@metamask/base-controller@npm:7.0.1"
@@ -3653,17 +3643,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/json-rpc-engine@npm:^8.0.1":
-  version: 8.0.2
-  resolution: "@metamask/json-rpc-engine@npm:8.0.2"
-  dependencies:
-    "@metamask/rpc-errors": ^6.2.1
-    "@metamask/safe-event-emitter": ^3.0.0
-    "@metamask/utils": ^8.3.0
-  checksum: c240d298ad503d93922a94a62cf59f0344b6d6644a523bc8ea3c0f321bea7172b89f2747a5618e2861b2e8152ae5086b76f391a10e4566529faa50b8850c051d
-  languageName: node
-  linkType: hard
-
 "@metamask/json-rpc-engine@npm:^9.0.1, @metamask/json-rpc-engine@npm:^9.0.2":
   version: 9.0.2
   resolution: "@metamask/json-rpc-engine@npm:9.0.2"
@@ -3683,18 +3662,6 @@ __metadata:
     "@metamask/safe-event-emitter": ^3.0.0
     "@metamask/utils": ^9.1.0
   checksum: 519680dccba47bde30b1d8733765d4ebeb489e950b24b09d885b394eacd8e8a29d76c601be72021491c38bd0fc188d76eddcfaf81835ea053c1696f2367865ab
-  languageName: node
-  linkType: hard
-
-"@metamask/json-rpc-middleware-stream@npm:^7.0.1":
-  version: 7.0.1
-  resolution: "@metamask/json-rpc-middleware-stream@npm:7.0.1"
-  dependencies:
-    "@metamask/json-rpc-engine": ^8.0.1
-    "@metamask/safe-event-emitter": ^3.0.0
-    "@metamask/utils": ^8.3.0
-    readable-stream: ^3.6.2
-  checksum: aacf571a906c3c1d5376e9b1f78d47510b568cc64af26f432dfaa6c6d5480d86e0f8af36855c57a0de95c017313d7ff19bfc396c648aa6ee79f689092154d46b
   languageName: node
   linkType: hard
 
@@ -3838,26 +3805,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/providers@npm:^16.0.0":
-  version: 16.1.0
-  resolution: "@metamask/providers@npm:16.1.0"
-  dependencies:
-    "@metamask/json-rpc-engine": ^8.0.1
-    "@metamask/json-rpc-middleware-stream": ^7.0.1
-    "@metamask/object-multiplex": ^2.0.0
-    "@metamask/rpc-errors": ^6.2.1
-    "@metamask/safe-event-emitter": ^3.1.1
-    "@metamask/utils": ^8.3.0
-    detect-browser: ^5.2.0
-    extension-port-stream: ^3.0.0
-    fast-deep-equal: ^3.1.3
-    is-stream: ^2.0.0
-    readable-stream: ^3.6.2
-    webextension-polyfill: ^0.10.0
-  checksum: 85e40140f342a38112c3d7cee436751a2be4c575cc4f815ab48a73b549abc2d756bf4a10e4b983e91dbd38076601f992531edb6d8d674aebceae32ef7e299275
-  languageName: node
-  linkType: hard
-
 "@metamask/providers@npm:^17.1.2":
   version: 17.1.2
   resolution: "@metamask/providers@npm:17.1.2"
@@ -3879,7 +3826,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@metamask/rpc-errors@npm:^6.2.1, @metamask/rpc-errors@npm:^6.3.1":
+"@metamask/providers@npm:^17.2.0":
+  version: 17.2.0
+  resolution: "@metamask/providers@npm:17.2.0"
+  dependencies:
+    "@metamask/json-rpc-engine": ^9.0.1
+    "@metamask/json-rpc-middleware-stream": ^8.0.1
+    "@metamask/object-multiplex": ^2.0.0
+    "@metamask/rpc-errors": ^6.3.1
+    "@metamask/safe-event-emitter": ^3.1.1
+    "@metamask/utils": ^9.0.0
+    detect-browser: ^5.2.0
+    extension-port-stream: ^4.1.0
+    fast-deep-equal: ^3.1.3
+    is-stream: ^2.0.0
+    readable-stream: ^3.6.2
+  peerDependencies:
+    webextension-polyfill: ^0.10.0 || ^0.11.0 || ^0.12.0
+  checksum: 56e5a974b91699b2d0c5541a61fc6672c34e93eac838cd157ad979847e8885210d90034c25b06856d65d2be6cf42e8047b15a50945fe39e84caadc1b206c1bf4
+  languageName: node
+  linkType: hard
+
+"@metamask/rpc-errors@npm:^6.3.1":
   version: 6.3.1
   resolution: "@metamask/rpc-errors@npm:6.3.1"
   dependencies:
@@ -4264,22 +4232,6 @@ __metadata:
     semver: ^7.3.8
     superstruct: ^1.0.3
   checksum: eca82e42911b2840deb4f32f0f215c5ffd14d22d68afbbe92d3180e920e509e310777b15eab29def3448f3535b66596ceb4c23666ec846adacc8e1bb093ff882
-  languageName: node
-  linkType: hard
-
-"@metamask/utils@npm:^8.3.0":
-  version: 8.3.0
-  resolution: "@metamask/utils@npm:8.3.0"
-  dependencies:
-    "@ethereumjs/tx": ^4.2.0
-    "@noble/hashes": ^1.3.1
-    "@scure/base": ^1.1.3
-    "@types/debug": ^4.1.7
-    debug: ^4.3.4
-    pony-cause: ^2.1.10
-    semver: ^7.5.4
-    superstruct: ^1.0.3
-  checksum: cd60c49b4c0397fb31e6b38937a0d9346cbb8337cb8add59db8db0e0e2156fb063ff4df93a26410157f0cc02aa9a9b785fc1b53cfc4ab73204462893ed11cacb
   languageName: node
   linkType: hard
 
@@ -12946,16 +12898,6 @@ __metadata:
   dependencies:
     webextension-polyfill: ">=0.10.0 <1.0"
   checksum: aee8bbeb2ed6f69a62f58a89580e0e9002dadb11062edbaedb7bb04cfc5a5e0b0d3980bfeaa1c3ee7e08dec7e5fac26e25497fc2f82000db7653442bd5eca157
-  languageName: node
-  linkType: hard
-
-"extension-port-stream@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "extension-port-stream@npm:3.0.0"
-  dependencies:
-    readable-stream: ^3.6.2 || ^4.4.2
-    webextension-polyfill: ">=0.10.0 <1.0"
-  checksum: 4f51d2258a96154c2d916a8a5425636a2b0817763e9277f7dc378d08b6f050c90d185dbde4313d27cf66ad99d4b3116479f9f699c40358c64cccfa524d2b55bf
   languageName: node
   linkType: hard
 
@@ -22339,7 +22281,7 @@ __metadata:
     "@metamask/eslint-config-jest": ^13.0.0
     "@metamask/eslint-config-nodejs": ^12.1.0
     "@metamask/eslint-config-typescript": ^13.0.0
-    "@metamask/providers": ^16.0.0
+    "@metamask/providers": ^17.2.0
     "@svgr/webpack": ^6.4.0
     "@testing-library/dom": ^8.17.1
     "@testing-library/jest-dom": ^5.16.4
@@ -24674,7 +24616,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webextension-polyfill@npm:>=0.10.0 <1.0, webextension-polyfill@npm:^0.10.0":
+"webextension-polyfill@npm:>=0.10.0 <1.0":
   version: 0.10.0
   resolution: "webextension-polyfill@npm:0.10.0"
   checksum: 4a59036bda571360c2c0b2fb03fe1dc244f233946bcf9a6766f677956c40fd14d270aaa69cdba95e4ac521014afbe4008bfa5959d0ac39f91c990eb206587f91
